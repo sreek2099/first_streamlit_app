@@ -1,7 +1,8 @@
 import streamlit
-import requests
-import pandas
+# import requests
+# import pandas
 import snowflake.connector
+from urllib.error import URLERROR
 streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 # streamlit.text(fruityvice_response.json())
